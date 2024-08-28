@@ -23,6 +23,7 @@
   ],
   "scripts": {
     "build": "tsc",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
     "clean": "rm -rf .turbo node_modules dist",
     "dev": "vitest",
     "lint": "eslint .",
@@ -30,6 +31,7 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
+    "@arethetypeswrong/cli": "^0.15.4",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*"
   }
