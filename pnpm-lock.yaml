@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      '@arethetypeswrong/cli':
+        specifier: ^0.15.4
+        version: 0.15.4
       '@changesets/cli':
         specifier: ^2.27.7
         version: 2.27.7
@@ -118,9 +121,15 @@ importers:
 
   packages/demo:
     devDependencies:
-      '@arethetypeswrong/cli':
-        specifier: ^0.15.4
-        version: 0.15.4
+      '@repo/eslint-config':
+        specifier: workspace:*
+        version: link:../../configs/eslint
+      '@repo/typescript-config':
+        specifier: workspace:*
+        version: link:../../configs/typescript
+
+  packages/theme:
+    devDependencies:
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../../configs/eslint

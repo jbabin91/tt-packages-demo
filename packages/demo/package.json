@@ -6,7 +6,7 @@
     "demo",
     "typescript"
   ],
-  "homepage": "https://github.com/jbabin91/tt-packages-demo/packages/demo",
+  "homepage": "https://github.com/jbabin91/tt-packages-demo/tree/main/packages/demo",
   "bugs": {
     "url": "https://github.com/jbabin91/tt-packages-demo/issues"
   },
@@ -31,7 +31,6 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@arethetypeswrong/cli": "^0.15.4",
     "@repo/eslint-config": "workspace:*",
     "@repo/typescript-config": "workspace:*"
   }

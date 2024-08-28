@@ -21,5 +21,20 @@
     "${configDir}/src/**/*.mjs",
     "${configDir}/src/**/*.mjsx"
   ],
-  "exclude": ["${configDir}/src/**/*.test.ts"]
+  "exclude": [
+    "${configDir}/src/**/*.test.js",
+    "${configDir}/src/**/*.test.jsx",
+    "${configDir}/src/**/*.test.ts",
+    "${configDir}/src/**/*.test.tsx",
+    "${configDir}/src/**/*.spec.js",
+    "${configDir}/src/**/*.spec.jsx",
+    "${configDir}/src/**/*.spec.ts",
+    "${configDir}/src/**/*.spec.tsx",
+    "${configDir}/src/**/*.stories.js",
+    "${configDir}/src/**/*.stories.jsx",
+    "${configDir}/src/**/*.stories.ts",
+    "${configDir}/src/**/*.stories.tsx",
+    "${configDir}/src/**/*.docs.md",
+    "${configDir}/src/**/*.docs.mdx"
+  ]
 }
