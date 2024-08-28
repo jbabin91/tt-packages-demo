@@ -14,8 +14,8 @@ import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
+  { ignores: ['**/node_modules/**', '**/dist/**', '**/.turbo/**'] },
   {
-    ignores: ['**/node_modules', '**/dist', '**/.turbo'],
     languageOptions: {
       globals: {
         ...globals.builtin,
@@ -96,6 +96,11 @@ export default tseslint.config(
   },
   {
     files: ['*.{jsx,tsx}'],
+    languageOptions: {
+      parserOptions: {
+        ecmaFeatures: { jsx: true },
+      },
+    },
     plugins: {
       'jsx-a11y': jsxA11y,
       react,
@@ -118,6 +123,7 @@ export default tseslint.config(
         },
       ],
     },
+    settings: { react: { version: 'detect' } },
   },
   prettierConfig,
 );
