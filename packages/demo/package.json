@@ -1,0 +1,36 @@
+{
+  "name": "tt-package-demo-2",
+  "version": "1.0.2",
+  "description": "A demo package for Total TypeScript",
+  "keywords": [
+    "demo",
+    "typescript"
+  ],
+  "homepage": "https://github.com/jbabin91/tt-packages-demo/packages/demo",
+  "bugs": {
+    "url": "https://github.com/jbabin91/tt-packages-demo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbabin91/tt-packages-demo.git"
+  },
+  "license": "MIT",
+  "author": "Jace Babin",
+  "type": "module",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf .turbo node_modules dist",
+    "dev": "vitest",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*"
+  }
+}

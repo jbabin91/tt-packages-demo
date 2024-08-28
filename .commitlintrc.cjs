@@ -3,7 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 // const apps = fs.readdirSync(path.resolve(__dirname, 'apps'));
-// const packages = fs.readdirSync(path.resolve(__dirname, 'packages'));
+const packages = fs.readdirSync(path.resolve(__dirname, 'packages'));
 const configs = fs.readdirSync(path.resolve(__dirname, 'configs'));
 
 /** @type {import("cz-git").UserConfig} */
@@ -22,7 +22,7 @@ module.exports = {
     useEmoji: true,
   },
   rules: {
-    'scope-enum': [2, 'always', ['repo', ...configs]],
+    'scope-enum': [2, 'always', ['repo', ...packages, ...configs]],
     'subject-empty': [2, 'never'],
     'subject-min-length': [2, 'always', 2],
   },

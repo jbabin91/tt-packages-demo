@@ -18,6 +18,7 @@
       "dependsOn": ["^lint"],
       "outputs": ["node_modules/.cache/eslint/.eslintcache"]
     },
+    "test": {},
     "typecheck": {
       "dependsOn": ["^typecheck"],
       "outputs": ["node_modules/.cache/typescript/*.tsbuildinfo"]

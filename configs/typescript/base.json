@@ -14,8 +14,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
 
-    "isolatedModules": true,
-
     "allowJs": true,
     "checkJs": true,
 
@@ -23,6 +21,8 @@
     "skipLibCheck": true,
     "useDefineForClassFields": true,
     "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
 
     "lib": ["ES2022"],
     "target": "ES2022",
