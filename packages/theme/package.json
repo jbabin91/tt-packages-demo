@@ -1,0 +1,44 @@
+{
+  "name": "@jbabin91/mui-theme",
+  "version": "0.0.1",
+  "description": "A demo package for a mui theme",
+  "keywords": [
+    "demo",
+    "mui",
+    "theme",
+    "typescript"
+  ],
+  "homepage": "https://github.com/jbabin91/tt-packages-demo/tree/main/packages/theme",
+  "bugs": {
+    "url": "https://github.com/jbabin91/tt-packages-demo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbabin91/tt-packages-demo.git"
+  },
+  "license": "MIT",
+  "author": "Jace Babin",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",
+    "clean": "rm -rf .turbo node_modules dist",
+    "dev": "vitest",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/material": "^6.0.0",
+    "@mui/x-data-grid": "^7.14.0",
+    "@mui/x-date-pickers": "^7.14.0",
+    "@repo/design-tokens": "workspace:*",
+    "dayjs": "^1.11.13"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*"
+  }
+}
