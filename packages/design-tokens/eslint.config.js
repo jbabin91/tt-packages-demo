@@ -9,5 +9,8 @@ export default [
         tsconfigRootDir: import.meta.dirname,
       },
     },
+    rules: {
+      'sort-keys-fix/sort-keys-fix': 'off',
+    },
   },
 ];

@@ -58,7 +58,7 @@ export default tseslint.config(
       ...tseslint.configs.recommendedTypeChecked,
       ...tseslint.configs.stylisticTypeChecked,
     ],
-    files: ['*.{ts,tsx}'],
+    files: ['**/*.{ts,tsx}'],
     languageOptions: {
       parser: tseslint.parser,
       parserOptions: {
@@ -95,7 +95,7 @@ export default tseslint.config(
     },
   },
   {
-    files: ['*.{jsx,tsx}'],
+    files: ['**/*.{jsx,tsx}'],
     languageOptions: {
       parserOptions: {
         ecmaFeatures: { jsx: true },
