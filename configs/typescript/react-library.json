@@ -1,13 +1,16 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "display": "Build",
+  "display": "React Library",
+  "extends": "./dom.json",
   "compilerOptions": {
     "tsBuildInfoFile": "${configDir}/node_modules/.cache/typescript/tsconfig.build.tsbuildinfo",
     "outDir": "${configDir}/dist",
     "rootDir": "${configDir}/src",
     "noEmit": false,
     "module": "NodeNext",
-    "moduleResolution": "NodeNext"
+    "moduleResolution": "NodeNext",
+    "target": "ES2022",
+    "jsx": "react-jsx"
   },
   "include": [
     "${configDir}/src/**/*.ts",
