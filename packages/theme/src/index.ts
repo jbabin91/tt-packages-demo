@@ -316,7 +316,6 @@ export {
   Slide,
   Zoom,
 } from './components/utils/transitions/index.js';
-export * from '@mui/material/useMediaQuery';
 
 // MUI X
 export type * from './components/mui-x/charts/index.js';
@@ -353,3 +352,13 @@ export {
 // MUI
 export type * from '@mui/material/styles';
 export * from '@mui/material/styles';
+
+// Hooks
+export type * from '@mui/material/useAutocomplete';
+export * from '@mui/material/useAutocomplete';
+export type * from '@mui/material/useMediaQuery';
+export * from '@mui/material/useMediaQuery';
+export type * from '@mui/material/usePagination';
+export * from '@mui/material/usePagination';
+export type * from '@mui/material/useScrollTrigger';
+export * from '@mui/material/useScrollTrigger';
