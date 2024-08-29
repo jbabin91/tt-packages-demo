@@ -1,5 +1,11 @@
 # @jbabin91/mui-theme
 
+## 1.1.0
+
+### Minor Changes
+
+- feat(theme): :sparkles: add more hooks from mui
+
 ## 1.0.0
 
 ### Major Changes
