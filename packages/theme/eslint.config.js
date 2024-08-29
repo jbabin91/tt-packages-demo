@@ -16,4 +16,10 @@ export default [
       'sort-keys-fix/sort-keys-fix': 'off',
     },
   },
+  {
+    files: ['**/lib/theme.ts'],
+    rules: {
+      '@typescript-eslint/consistent-type-definitions': 'off',
+    },
+  },
 ];
