@@ -1,5 +1,17 @@
 # @jbabin91/mui-theme
 
+## 1.0.0
+
+### Major Changes
+
+- feat(theme): :sparkles: add more mui components to package
+
+  BREAKING CHANGE: Major changes to export new components
+
+### Patch Changes
+
+- chore(repo): :hammer: bump dependencies
+
 ## 0.2.0
 
 ### Minor Changes
