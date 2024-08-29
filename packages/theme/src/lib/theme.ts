@@ -1,9 +1,12 @@
 import type {} from '@mui/lab/themeAugmentation';
 import {
   colors,
+  type Components,
   createTheme,
+  type CssVarsTheme,
   type PaletteColorOptions,
   type PaletteOptions,
+  type Theme,
 } from '@mui/material';
 import type { TypographyOptions } from '@mui/material/styles/createTypography.js';
 import type {} from '@mui/x-data-grid/themeAugmentation';
@@ -239,6 +242,263 @@ const typography = {
   htmlFontSize: 16,
 } satisfies TypographyOptions;
 
+const components = {
+  MuiAvatar: {
+    defaultProps: {
+      variant: 'circular',
+    },
+    styleOverrides: {
+      root: ({ theme }) =>
+        theme.unstable_sx({
+          backgroundColor: theme.palette.primary.light,
+          fontSize: '1.125rem',
+          height: '2rem',
+          width: '2rem',
+        }),
+    },
+  },
+  MuiBadge: {
+    defaultProps: {
+      anchorOrigin: { horizontal: 'right', vertical: 'top' },
+      color: 'error',
+      variant: 'standard',
+    },
+    styleOverrides: {
+      colorPrimary: ({ theme }) => {
+        return theme.unstable_sx({
+          backgroundColor:
+            theme.palette.mode === 'dark'
+              ? theme.palette.primary.dark
+              : undefined,
+          color:
+            theme.palette.mode === 'dark'
+              ? theme.palette.common.white
+              : undefined,
+        });
+      },
+    },
+  },
+  MuiButton: {
+    defaultProps: {
+      color: 'accent',
+      disableElevation: true,
+      size: 'medium',
+      variant: 'contained',
+    },
+    styleOverrides: {
+      root: ({ theme }) =>
+        theme.unstable_sx({
+          borderRadius: '0.5rem',
+          textTransform: 'none',
+        }),
+    },
+  },
+  MuiButtonGroup: {
+    defaultProps: {
+      color: 'accent',
+      disableElevation: true,
+      size: 'medium',
+      variant: 'contained',
+    },
+  },
+  MuiCheckbox: {
+    defaultProps: {
+      color: 'primary',
+      indeterminate: false,
+      size: 'small',
+    },
+    styleOverrides: {
+      root: ({ theme }) =>
+        theme.unstable_sx({
+          padding: '0.5rem',
+        }),
+    },
+  },
+  MuiCssBaseline: {
+    styleOverrides: {
+      html: {
+        textRendering: 'optimizeLegibility',
+      },
+    },
+  },
+  MuiFormControlLabel: {
+    defaultProps: {
+      componentsProps: {
+        typography: { variant: 'body2' },
+      },
+    },
+  },
+  MuiLoadingButton: {
+    defaultProps: {
+      color: 'accent',
+      disableElevation: true,
+      size: 'medium',
+      variant: 'contained',
+    },
+    styleOverrides: {
+      root: ({ theme }) =>
+        theme.unstable_sx({
+          borderRadius: '0.5rem',
+          textTransform: 'none',
+        }),
+    },
+  },
+  MuiOutlinedInput: {
+    defaultProps: {
+      maxRows: 4,
+      minRows: 4,
+    },
+    styleOverrides: {
+      root: ({ theme }) =>
+        theme.unstable_sx({
+          borderRadius: '0.5rem',
+          minWidth: '13.75rem',
+        }),
+    },
+  },
+  MuiRadio: {
+    defaultProps: {
+      color: 'primary',
+      size: 'small',
+    },
+    styleOverrides: {
+      root: ({ theme }) =>
+        theme.unstable_sx({
+          padding: '0.5rem',
+        }),
+    },
+    variants: [
+      {
+        props: {
+          size: 'small',
+        },
+        style: ({ theme }) =>
+          theme.unstable_sx({
+            '& .MuiSvgIcon-root': {
+              height: '1.25rem',
+              width: '1.25rem',
+            },
+          }),
+      },
+      {
+        props: {
+          size: 'medium',
+        },
+        style: ({ theme }) =>
+          theme.unstable_sx({
+            '& .MuiSvgIcon-root': {
+              height: '1.5rem',
+              width: '1.5rem',
+            },
+          }),
+      },
+      {
+        props: {
+          size: 'large',
+        },
+        style: ({ theme }) =>
+          theme.unstable_sx({
+            '& .MuiSvgIcon-root': {
+              height: '1.75rem',
+              width: '1.75rem',
+            },
+          }),
+      },
+    ],
+  },
+  MuiSelect: {
+    styleOverrides: {
+      root: ({ theme }) =>
+        theme.unstable_sx({
+          '& .MuiInputBase-root': {
+            borderRadius: '0.5rem',
+          },
+        }),
+    },
+  },
+  MuiSkeleton: {
+    defaultProps: {
+      animation: 'pulse',
+      variant: 'text',
+    },
+  },
+  MuiTextField: {
+    defaultProps: {
+      maxRows: 4,
+      minRows: 4,
+      size: 'medium',
+      variant: 'outlined',
+    },
+    styleOverrides: {
+      root: ({ theme }) =>
+        theme.unstable_sx({
+          '& .MuiInputBase-root': {
+            borderRadius: '0.5rem',
+          },
+          fontSize: '1rem',
+          minWidth: '13.75rem',
+        }),
+    },
+  },
+  MuiToggleButton: {
+    defaultProps: {
+      color: 'primary',
+      size: 'medium',
+    },
+    styleOverrides: {
+      root: ({ theme }) =>
+        theme.unstable_sx({
+          '&.Mui-selected': {
+            backgroundColor: theme.palette.secondary.dark,
+            color:
+              theme.palette.mode === 'light'
+                ? theme.palette.text.primary
+                : theme.palette.common.white,
+          },
+          backgroundColor: theme.palette.secondary.main,
+          borderRadius: '0.5rem',
+          color: theme.palette.text.secondary,
+          textTransform: 'none',
+        }),
+    },
+    variants: [
+      {
+        props: {
+          size: 'small',
+        },
+        style: ({ theme }) =>
+          theme.unstable_sx({
+            padding: '0.188rem',
+          }),
+      },
+      {
+        props: {
+          size: 'medium',
+        },
+        style: ({ theme }) =>
+          theme.unstable_sx({
+            padding: '0.375rem',
+          }),
+      },
+      {
+        props: {
+          size: 'large',
+        },
+        style: ({ theme }) =>
+          theme.unstable_sx({
+            padding: '0.563rem',
+          }),
+      },
+    ],
+  },
+  MuiToggleButtonGroup: {
+    defaultProps: {
+      color: 'primary',
+      size: 'medium',
+    },
+  },
+} satisfies Components<Omit<Theme, 'components' | 'palette'> & CssVarsTheme>;
+
 const theme = createTheme({
   colorSchemes: {
     dark: {
@@ -248,42 +508,188 @@ const theme = createTheme({
       palette: lightPalette,
     },
   },
-  components: {},
+  components,
   typography,
 });
 
 export default theme;
 
+// Update the MuiTheme's style types
 declare module '@mui/material/styles' {
-  // eslint-disable-next-line @typescript-eslint/consistent-type-definitions
+  // Add or remove colors from the palette
   interface Palette {
-    accent?: PaletteColorOptions;
-    tertiary?: PaletteColorOptions;
-    link?: PaletteColorOptions;
+    accent: PaletteColorOptions;
+    tertiary: PaletteColorOptions;
+    link: PaletteColorOptions;
   }
-  // eslint-disable-next-line @typescript-eslint/consistent-type-definitions
+
+  // Add or remove colors from the palette's color options
   interface PaletteOptions {
     accent?: PaletteColorOptions;
     tertiary?: PaletteColorOptions;
     link?: PaletteColorOptions;
   }
-  // eslint-disable-next-line @typescript-eslint/consistent-type-definitions
+
+  // Add custom typography variants
   interface TypographyVariants {
     display: React.CSSProperties;
     caption2: React.CSSProperties;
   }
-  // eslint-disable-next-line @typescript-eslint/consistent-type-definitions
+
+  // Add custom typography variants options
   interface TypographyVariantsOptions {
     display?: React.CSSProperties;
     caption2?: React.CSSProperties;
   }
 }
 
+// Update the Typography's variant prop options
 declare module '@mui/material/Typography' {
-  // eslint-disable-next-line @typescript-eslint/consistent-type-definitions
   interface TypographyPropsVariantOverrides {
-    display: true;
-    caption2: true;
-    h6: false;
+    display: true; // add custom size variant
+    caption2: true; // add custom size variant
+    h6: false; // disable `h6` variant
+  }
+}
+
+declare module '@mui/material/Avatar' {
+  interface ToggleButtonPropsVariantOverrides {
+    rounded: false;
+    square: false;
+  }
+}
+
+declare module '@mui/material/Button' {
+  // Update the Button's variant prop options
+  interface ButtonPropsVariantOverrides {
+    outlined: false; // disable `outlined` variant
+  }
+
+  interface ButtonPropsColorOverrides {
+    accent: true; // add custom color variant to buttons
+    link: true; // add custom color variant to buttons
+    primary: false;
+    warning: false;
+    info: false;
+    inherit: false;
+  }
+}
+
+declare module '@mui/lab/LoadingButton' {
+  // Update the Button's variant prop options
+  interface LoadingButtonPropsVariantOverrides {
+    outlined: false; // disable `outlined` variant
+  }
+
+  interface LoadingButtonPropsColorOverrides {
+    accent: true; // add custom color variant to buttons
+    link: true; // add custom color variant to buttons
+    primary: false;
+    warning: false;
+    info: false;
+    inherit: false;
+  }
+}
+
+declare module '@mui/material/ButtonGroup' {
+  // Update the ButtonGroup's variant prop options
+  interface ButtonGroupPropsVariantOverrides {
+    outlined: false; // disable `outlined` variant
+  }
+
+  interface ButtonGroupPropsColorOverrides {
+    accent: true; // add custom color variant to buttons
+    link: true; // add custom color variant to buttons
+    primary: false;
+    warning: false;
+    info: false;
+    inherit: false;
+  }
+}
+
+declare module '@mui/material/Checkbox' {
+  interface CheckboxPropsSizeOverrides {
+    large: true;
+  }
+  interface CheckboxPropsColorOverrides {
+    secondary: false;
+    error: false;
+    warning: false;
+    info: false;
+    success: false;
+    inherit: false;
+  }
+}
+
+declare module '@mui/material/FormControl' {
+  interface FormControlPropsVariantOverrides {
+    filled: false; // disable `filled` variant
+    standard: false; // disable `standard` variant
+  }
+}
+
+declare module '@mui/material/Radio' {
+  interface RadioPropsSizeOverrides {
+    large: true;
+  }
+  interface RadioPropsColorOverrides {
+    secondary: false;
+    error: false;
+    warning: false;
+    info: false;
+    success: false;
+    inherit: false;
+  }
+}
+
+declare module '@mui/material/Skeleton' {
+  interface SkeletonPropsVariantOverrides {
+    rectangular: false;
+  }
+}
+
+declare module '@mui/material/Switch' {
+  interface SwitchPropsColorOverrides {
+    secondary: false;
+    error: false;
+    warning: false;
+    info: false;
+    success: false;
+    inherit: false;
+  }
+}
+
+// Update the TextField's variant prop options
+declare module '@mui/material/TextField' {
+  interface TextFieldPropsVariantOverrides {
+    filled: false; // disable `filled` variant
+    standard: false; // disable `standard` variant
+  }
+}
+
+declare module '@mui/material/ToggleButton' {
+  interface ToggleButtonPropsVariantOverrides {
+    outlined: false; // disable `outlined` variant
+  }
+
+  interface ToggleButtonPropsColorOverrides {
+    error: false;
+    warning: false;
+    info: false;
+    success: false;
+    inherit: false;
+  }
+}
+
+declare module '@mui/material/ToggleButtonGroup' {
+  interface ToggleButtonGroupPropsVariantOverrides {
+    outlined: false;
+  }
+  interface ToggleButtonGroupPropsColorOverrides {
+    error: false;
+    warning: false;
+    info: false;
+    success: false;
+    inherit: false;
   }
 }
