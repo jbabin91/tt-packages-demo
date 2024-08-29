@@ -1,5 +1,15 @@
 # @jbabin91/mui-theme
 
+## 1.2.0
+
+### Minor Changes
+
+- feat(theme): :sparkles: update mui theme
+
+### Patch Changes
+
+- chore(theme): :hammer: update eslint rules
+
 ## 1.1.0
 
 ### Minor Changes
