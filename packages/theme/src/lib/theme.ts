@@ -7,6 +7,7 @@ import {
 } from '@mui/material';
 import type { TypographyOptions } from '@mui/material/styles/createTypography.js';
 import type {} from '@mui/x-data-grid/themeAugmentation';
+
 import {
   colors as designColors,
   fontFamilies,
@@ -14,7 +15,7 @@ import {
   fontWeights,
   letterSpacings,
   lineHeights,
-} from '@repo/design-tokens';
+} from './design-tokens/index.js';
 
 const lightPalette = {
   accent: {

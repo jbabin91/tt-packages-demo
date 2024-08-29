@@ -10,4 +10,10 @@ export default [
       },
     },
   },
+  {
+    files: ['**/design-tokens/*.ts'],
+    rules: {
+      'sort-keys-fix/sort-keys-fix': 'off',
+    },
+  },
 ];
