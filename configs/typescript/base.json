@@ -44,6 +44,7 @@
   "include": [
     "${configDir}/.commitlintrc.cjs",
     "${configDir}/.storybook/**/*",
+    "${configDir}/**/*.stories.*",
     "${configDir}/**/*.astro",
     "${configDir}/**/*.ts",
     "${configDir}/**/*.tsx",
