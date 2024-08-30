@@ -14,7 +14,14 @@ import globals from 'globals';
 import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
-  { ignores: ['**/node_modules/**', '**/dist/**', '**/.turbo/**'] },
+  {
+    ignores: [
+      '**/.turbo/**',
+      '**/node_modules/**',
+      '**/dist/**',
+      '**/storybook-static/**',
+    ],
+  },
   {
     languageOptions: {
       globals: {
