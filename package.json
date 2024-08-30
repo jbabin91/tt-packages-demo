@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "turbo build",
+    "build-storybook": "turbo build-storybook",
     "check-exports": "turbo check-exports",
     "check-format": "prettier -uc --cache .",
     "ci": "pnpm run check-format && pnpm run lint && pnpm run typecheck && pnpm run test && pnpm run build && pnpm run check-exports",
@@ -19,6 +20,7 @@
     "local-release": "changeset version && changeset publish",
     "prepare": "husky",
     "prepublishOnly": "pnpm run ci",
+    "storybook": "turbo storybook",
     "test": "turbo test",
     "typecheck": "turbo typecheck"
   },
