@@ -1,18 +1,18 @@
 import type {} from '@mui/lab/themeAugmentation';
 import {
-  colors,
   type Components,
   createTheme,
-  type CssVarsTheme,
   type PaletteColorOptions,
+  type PaletteMode,
   type PaletteOptions,
   type Theme,
+  type ThemeOptions,
 } from '@mui/material';
 import type { TypographyOptions } from '@mui/material/styles/createTypography.js';
 import type {} from '@mui/x-data-grid/themeAugmentation';
 
 import {
-  colors as designColors,
+  colors,
   fontFamilies,
   fontSizes,
   fontWeights,
@@ -20,12 +20,14 @@ import {
   lineHeights,
 } from './design-tokens/index.js';
 
-const lightPalette = {
+const paletteLight = {
+  ...colors,
+  // Custom Colors
   accent: {
-    contrastText: designColors.navy[900],
-    dark: designColors.yellow[700],
-    light: designColors.yellow[500],
-    main: designColors.yellow[600],
+    contrastText: colors.navy[900],
+    dark: colors.yellow[700],
+    light: colors.yellow[500],
+    main: colors.yellow[600],
   },
   action: {
     activatedOpacity: 0.46,
@@ -35,71 +37,73 @@ const lightPalette = {
     selectedOpacity: 0.08,
   },
   background: {
-    default: designColors.common.white,
-    paper: designColors.common.white,
+    default: colors.common.white,
+    paper: colors.common.white,
   },
   divider: 'rgba(7,20,51,0.12)',
   error: {
-    contrastText: designColors.common.white,
-    dark: designColors.red[800],
-    light: designColors.red[300],
-    main: designColors.red[600],
+    contrastText: colors.common.white,
+    dark: colors.red[800],
+    light: colors.red[300],
+    main: colors.red[600],
   },
   info: {
-    contrastText: designColors.common.white,
-    dark: designColors.navy[1000],
-    light: designColors.navy[600],
-    main: designColors.navy[900],
+    contrastText: colors.common.white,
+    dark: colors.navy[1000],
+    light: colors.navy[600],
+    main: colors.navy[900],
   },
   link: {
-    contrastText: designColors.common.white,
-    dark: designColors.blue[800],
-    light: designColors.blue[300],
-    main: designColors.blue[500],
+    contrastText: colors.common.white,
+    dark: colors.blue[800],
+    light: colors.blue[300],
+    main: colors.blue[500],
   },
   primary: {
     contrastText: colors.common.white,
-    dark: designColors.navy[1000],
-    light: designColors.navy[300],
-    main: designColors.navy[900],
+    dark: colors.navy[1000],
+    light: colors.navy[300],
+    main: colors.navy[900],
   },
   secondary: {
-    contrastText: designColors.navy[900],
-    dark: designColors.grey[300],
-    light: designColors.grey[50],
-    main: designColors.grey[100],
+    contrastText: colors.navy[900],
+    dark: colors.grey[300],
+    light: colors.grey[50],
+    main: colors.grey[100],
   },
   success: {
-    contrastText: designColors.common.white,
-    dark: designColors.green[700],
-    light: designColors.green[300],
-    main: designColors.green[400],
+    contrastText: colors.common.white,
+    dark: colors.green[700],
+    light: colors.green[300],
+    main: colors.green[400],
   },
   tertiary: {
-    contrastText: designColors.common.white,
-    dark: designColors.turquoise[500],
-    light: designColors.turquoise[200],
-    main: designColors.turquoise[300],
+    contrastText: colors.common.white,
+    dark: colors.turquoise[500],
+    light: colors.turquoise[200],
+    main: colors.turquoise[300],
   },
   text: {
     disabled: 'rgba(7,20,51,0.38)',
-    primary: designColors.navy[900],
+    primary: colors.navy[900],
     secondary: 'rgba(7,20,51,0.57)',
   },
   warning: {
-    contrastText: designColors.common.white,
-    dark: designColors.orange[600],
-    light: designColors.orange[200],
-    main: designColors.orange[400],
+    contrastText: colors.common.white,
+    dark: colors.orange[600],
+    light: colors.orange[200],
+    main: colors.orange[400],
   },
 } satisfies PaletteOptions;
 
-const darkPalette = {
+const paletteDark = {
+  ...colors,
+  // Custom Colors
   accent: {
-    contrastText: designColors.navy[900],
-    dark: designColors.yellow[700],
-    light: designColors.yellow[400],
-    main: designColors.yellow[600],
+    contrastText: colors.navy[900],
+    dark: colors.yellow[700],
+    light: colors.yellow[400],
+    main: colors.yellow[600],
   },
   action: {
     activatedOpacity: 0.56,
@@ -114,46 +118,46 @@ const darkPalette = {
   },
   divider: 'rgba(255,255,255,0.12)',
   error: {
-    contrastText: designColors.common.white,
-    dark: designColors.red[800],
-    light: designColors.red[300],
-    main: designColors.red[600],
+    contrastText: colors.common.white,
+    dark: colors.red[800],
+    light: colors.red[300],
+    main: colors.red[600],
   },
   info: {
     contrastText: 'rgba(7,20,51,0.87)',
-    dark: designColors.navy[400],
-    light: designColors.navy[100],
-    main: designColors.navy[200],
+    dark: colors.navy[400],
+    light: colors.navy[100],
+    main: colors.navy[200],
   },
   link: {
-    contrastText: designColors.navy[900],
-    dark: designColors.blue[700],
-    light: designColors.blue[200],
-    main: designColors.blue[300],
+    contrastText: colors.navy[900],
+    dark: colors.blue[700],
+    light: colors.blue[200],
+    main: colors.blue[300],
   },
   primary: {
-    contrastText: designColors.navy[900],
-    dark: designColors.navy[400],
-    light: designColors.navy[100],
-    main: designColors.navy[200],
+    contrastText: colors.navy[900],
+    dark: colors.navy[400],
+    light: colors.navy[100],
+    main: colors.navy[200],
   },
   secondary: {
-    contrastText: designColors.grey[100],
-    dark: designColors.grey[700],
-    light: designColors.grey[900],
-    main: designColors.grey[600],
+    contrastText: colors.grey[100],
+    dark: colors.grey[700],
+    light: colors.grey[900],
+    main: colors.grey[600],
   },
   success: {
     contrastText: 'rgba(255,255,255,0.87)',
-    dark: designColors.green[700],
-    light: designColors.green[400],
-    main: designColors.green[600],
+    dark: colors.green[700],
+    light: colors.green[400],
+    main: colors.green[600],
   },
   tertiary: {
     contrastText: 'rgba(102,203,227,0.87)',
-    dark: designColors.turquoise[300],
-    light: designColors.turquoise[100],
-    main: designColors.turquoise[200],
+    dark: colors.turquoise[300],
+    light: colors.turquoise[100],
+    main: colors.turquoise[200],
   },
   text: {
     disabled: 'rgba(255,255,255,0.38)',
@@ -162,9 +166,9 @@ const darkPalette = {
   },
   warning: {
     contrastText: 'rgba(0,0,0,0.87)',
-    dark: designColors.orange[600],
-    light: designColors.orange[200],
-    main: designColors.orange[400],
+    dark: colors.orange[600],
+    light: colors.orange[200],
+    main: colors.orange[400],
   },
 } satisfies PaletteOptions;
 
@@ -497,22 +501,33 @@ const components = {
       size: 'medium',
     },
   },
-} satisfies Components<Omit<Theme, 'components' | 'palette'> & CssVarsTheme>;
+} satisfies Components<Omit<Theme, 'components'>>;
 
-const theme = createTheme({
-  colorSchemes: {
-    dark: {
-      palette: darkPalette,
-    },
-    light: {
-      palette: lightPalette,
-    },
-  },
+const getDesignTokens = (mode: PaletteMode): ThemeOptions => ({
   components,
+  palette: {
+    mode,
+    ...(mode === 'light' ? paletteLight : paletteDark),
+  },
+  spacing: 8,
   typography,
 });
 
-export default theme;
+const lightTheme = createTheme(getDesignTokens('light'));
+
+const darkTheme = createTheme(getDesignTokens('dark'));
+
+const theme = createTheme({
+  colorSchemes: {
+    dark: { palette: paletteDark },
+    light: { palette: paletteLight },
+  },
+  components,
+  spacing: 8,
+  typography,
+});
+
+export { darkTheme, getDesignTokens, lightTheme, theme };
 
 // Update the MuiTheme's style types
 declare module '@mui/material/styles' {

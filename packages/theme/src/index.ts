@@ -1,5 +1,5 @@
 // MUI Theme
-export { default as theme } from './lib/theme.js';
+export { darkTheme, getDesignTokens, lightTheme, theme } from './lib/theme.js';
 
 // inputs
 export type { AutocompleteProps } from './components/inputs/autocomplete/index.js';
@@ -350,8 +350,8 @@ export {
 } from './components/lab/timeline/index.js';
 
 // MUI
-export type * from '@mui/material/styles';
-export * from '@mui/material/styles';
+export type { ThemeProviderProps } from '@mui/material/styles/ThemeProvider.js';
+export { default as ThemeProvider } from '@mui/material/styles/ThemeProvider.js';
 
 // Hooks
 export type * from '@mui/material/useAutocomplete';
