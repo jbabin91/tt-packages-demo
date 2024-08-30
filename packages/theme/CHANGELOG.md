@@ -1,5 +1,15 @@
 # @jbabin91/mui-theme
 
+## 1.3.0
+
+### Minor Changes
+
+- feat(theme): :sparkles: update mui theme and exports
+
+### Patch Changes
+
+- chore(repo): :hammer: bump dependencies
+
 ## 1.2.0
 
 ### Minor Changes
