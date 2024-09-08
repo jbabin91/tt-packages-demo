@@ -7,10 +7,9 @@
     "outDir": "${configDir}/dist",
     "rootDir": "${configDir}/src",
     "noEmit": false,
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "target": "ES2022",
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "module": "Preserve",
+    "moduleResolution": "Bundler"
   },
   "include": [
     "${configDir}/src/**/*.ts",
@@ -25,21 +24,5 @@
     "${configDir}/src/**/*.cjsx",
     "${configDir}/src/**/*.mjs",
     "${configDir}/src/**/*.mjsx"
-  ],
-  "exclude": [
-    "${configDir}/src/**/*.test.js",
-    "${configDir}/src/**/*.test.jsx",
-    "${configDir}/src/**/*.test.ts",
-    "${configDir}/src/**/*.test.tsx",
-    "${configDir}/src/**/*.spec.js",
-    "${configDir}/src/**/*.spec.jsx",
-    "${configDir}/src/**/*.spec.ts",
-    "${configDir}/src/**/*.spec.tsx",
-    "${configDir}/src/**/*.stories.js",
-    "${configDir}/src/**/*.stories.jsx",
-    "${configDir}/src/**/*.stories.ts",
-    "${configDir}/src/**/*.stories.tsx",
-    "${configDir}/src/**/*.docs.md",
-    "${configDir}/src/**/*.docs.mdx"
   ]
 }

@@ -26,9 +26,9 @@
 
     "lib": ["ES2022"],
     "target": "ES2022",
-    "module": "Preserve",
+    "module": "NodeNext",
     "moduleDetection": "force",
-    "moduleResolution": "Bundler",
+    "moduleResolution": "NodeNext",
     "resolveJsonModule": true,
     "noEmit": true,
     "incremental": true,
