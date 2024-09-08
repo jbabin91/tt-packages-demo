@@ -1,5 +1,11 @@
 # @jbabin91/mui-theme
 
+## 1.3.2
+
+### Patch Changes
+
+- chore(repo): :hammer: bump dependencies
+
 ## 1.3.1
 
 ### Patch Changes
