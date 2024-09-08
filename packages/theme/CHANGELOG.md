@@ -1,5 +1,11 @@
 # @jbabin91/mui-theme
 
+## 1.3.1
+
+### Patch Changes
+
+- build(theme): :package: updated package.json for exports
+
 ## 1.3.0
 
 ### Minor Changes
