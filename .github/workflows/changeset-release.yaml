@@ -12,7 +12,7 @@ concurrency:
 jobs:
   release:
     name: Release
-    if: github.repository == '@jbabin91/tt-packages-demo'
+    if: github.repository == 'jbabin91/tt-packages-demo'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:
