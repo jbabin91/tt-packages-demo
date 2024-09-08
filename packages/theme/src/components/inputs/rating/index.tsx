@@ -1,2 +1,8 @@
-export type { RatingProps } from '@mui/material/Rating';
-export { default as Rating } from '@mui/material/Rating';
+import MuiRating, {
+  type RatingProps as MuiRatingProps,
+} from '@mui/material/Rating';
+
+export type RatingProps = MuiRatingProps;
+export function Rating(props: RatingProps) {
+  return <MuiRating {...props} />;
+}

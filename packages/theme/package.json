@@ -27,6 +27,9 @@
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc -b",
     "check-exports": "attw --pack . --ignore-rules=cjs-resolves-to-esm",

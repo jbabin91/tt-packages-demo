@@ -1,19 +1,45 @@
+import MuiFormControl, {
+  type FormControlProps as MuiFormControlProps,
+} from '@mui/material/FormControl';
+import MuiFormControlLabel, {
+  type FormControlLabelProps as MuiFormControlLabelProps,
+} from '@mui/material/FormControlLabel';
+import MuiFormGroup, {
+  type FormGroupProps as MuiFormGroupProps,
+} from '@mui/material/FormGroup';
+import MuiFormHelperText, {
+  type FormHelperTextProps as MuiFormHelperTextProps,
+} from '@mui/material/FormHelperText';
+import MuiFormLabel, {
+  type FormLabelProps as MuiFormLabelProps,
+} from '@mui/material/FormLabel';
+
 // Form Control
-export type { FormControlProps } from '@mui/material/FormControl';
-export { default as FormControl } from '@mui/material/FormControl';
+export type FormControlProps = MuiFormControlProps;
+export function FormControl(props: FormControlProps) {
+  return <MuiFormControl {...props} />;
+}
 
 // Form Control Label
-export type { FormControlLabelProps } from '@mui/material/FormControlLabel';
-export { default as FormControlLabel } from '@mui/material/FormControlLabel';
+export type FormControlLabelProps = MuiFormControlLabelProps;
+export function FormControlLabel(props: FormControlLabelProps) {
+  return <MuiFormControlLabel {...props} />;
+}
 
 // Form Group
-export type { FormGroupProps } from '@mui/material/FormGroup';
-export { default as FormGroup } from '@mui/material/FormGroup';
+export type FormGroupProps = MuiFormGroupProps;
+export function FormGroup(props: FormGroupProps) {
+  return <MuiFormGroup {...props} />;
+}
 
 // Form Helper Text
-export type { FormHelperTextProps } from '@mui/material/FormHelperText';
-export { default as FormHelperText } from '@mui/material/FormHelperText';
+export type FormHelperTextProps = MuiFormHelperTextProps;
+export function FormHelperText(props: FormHelperTextProps) {
+  return <MuiFormHelperText {...props} />;
+}
 
 // Form Label
-export type { FormLabelProps } from '@mui/material/FormLabel';
-export { default as FormLabel } from '@mui/material/FormLabel';
+export type FormLabelProps = MuiFormLabelProps;
+export function FormLabel(props: FormLabelProps) {
+  return <MuiFormLabel {...props} />;
+}

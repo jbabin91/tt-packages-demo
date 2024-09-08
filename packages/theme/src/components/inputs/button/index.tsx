@@ -1,7 +1,18 @@
+import MuiButton, {
+  type LoadingButtonProps as MuiButtonProps,
+} from '@mui/lab/LoadingButton';
+import MuiIconButton, {
+  type IconButtonProps as MuiIconButtonProps,
+} from '@mui/material/IconButton';
+
 // Button
-export { type LoadingButtonProps as ButtonProps } from '@mui/lab/LoadingButton';
-export { default as Button } from '@mui/lab/LoadingButton';
+export type ButtonProps = MuiButtonProps;
+export function Button(props: ButtonProps) {
+  return <MuiButton {...props} />;
+}
 
 // Icon Button
-export type { IconButtonProps } from '@mui/material/IconButton';
-export { default as IconButton } from '@mui/material/IconButton';
+export type IconButtonProps = MuiIconButtonProps;
+export function IconButton(props: IconButtonProps) {
+  return <MuiIconButton {...props} />;
+}

@@ -1,2 +1,8 @@
-export type { SwitchProps } from '@mui/material/Switch';
-export { default as Switch } from '@mui/material/Switch';
+import MuiSwitch, {
+  type SwitchProps as MuiSwitchProps,
+} from '@mui/material/Switch';
+
+export type SwitchProps = MuiSwitchProps;
+export function Switch(props: SwitchProps) {
+  return <MuiSwitch {...props} />;
+}

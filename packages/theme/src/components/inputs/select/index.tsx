@@ -1,2 +1,8 @@
-export type { SelectProps } from '@mui/material/Select';
-export { default as Select } from '@mui/material/Select';
+import MuiSelect, {
+  type SelectProps as MuiSelectProps,
+} from '@mui/material/Select';
+
+export type SelectProps = MuiSelectProps;
+export function Select(props: SelectProps) {
+  return <MuiSelect {...props} />;
+}
