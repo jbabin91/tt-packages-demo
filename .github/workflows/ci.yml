@@ -14,24 +14,15 @@ concurrency:
 jobs:
   ci:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [20]
-
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Install pnpm
-        uses: pnpm/action-setup@v4
-
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
+      - name: Checkout Source code
+        uses: actions/checkout@v4
 
       - name: Install dependencies
-        run: pnpm install
+        uses: ./.github/actions/setup
 
-      - name: Run CI
-        run: pnpm run ci
+      - name: Branch Checks
+        uses: ./.github/actions/checks
+
+      - name: Build All
+        uses: ./.github/actions/build-all

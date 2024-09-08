@@ -4,14 +4,14 @@
   "type": "module",
   "scripts": {
     "build": "turbo build",
-    "build-storybook": "turbo build-storybook",
+    "build:storybook": "turbo build-storybook",
     "check-exports": "turbo check-exports",
-    "check-format": "prettier -uc --cache .",
-    "ci": "pnpm run check-format && pnpm run lint && pnpm run typecheck && pnpm run test && pnpm run build && pnpm run check-exports",
+    "ci": "pnpm run format:check && pnpm run lint && pnpm run typecheck && pnpm run test && pnpm run build && pnpm run check-exports",
     "clean": "turbo clean",
     "clean:ws": "rm -rf .turbo node_modules",
     "dev": "turbo dev",
     "format": "prettier -uw --cache .",
+    "format:check": "prettier -uc --cache .",
     "generate:changesets": "pnpm changeset-conventional",
     "postinstall": "pnpm lint:ws",
     "lint": "turbo lint --continue -- --max-warnings 0 --cache --cache-location node_modules/.cache/eslint/.eslintcache",
@@ -20,9 +20,11 @@
     "local-release": "changeset version && changeset publish",
     "prepare": "husky",
     "prepublishOnly": "pnpm run ci",
+    "release": "pnpm build && changeset publish",
     "storybook": "turbo storybook",
     "test": "turbo test",
-    "typecheck": "turbo typecheck"
+    "typecheck": "turbo typecheck",
+    "version-packages": "changeset version && pnpm format"
   },
   "config": {
     "commitizen": {
