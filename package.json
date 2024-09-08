@@ -12,7 +12,7 @@
     "clean:ws": "rm -rf .turbo node_modules",
     "dev": "turbo dev",
     "format": "prettier -uw --cache .",
-    "genereate:changesets": "pnpm changeset-conventional",
+    "generate:changesets": "pnpm changeset-conventional",
     "postinstall": "pnpm lint:ws",
     "lint": "turbo lint --continue -- --max-warnings 0 --cache --cache-location node_modules/.cache/eslint/.eslintcache",
     "lint:fix": "turbo lint --continue -- --fix --cache --cache-location node_modules/.cache/eslint/.eslintcache",
