@@ -1,5 +1,11 @@
 # @jbabin91/mui-theme
 
+## 1.4.0
+
+### Minor Changes
+
+- [`232dba5`](https://github.com/jbabin91/tt-packages-demo/commit/232dba5e7c48ee25a6813dcb30e25bf79488860b) Thanks [@jbabin91](https://github.com/jbabin91)! - feat(theme): :sparkles: update package.json and tsconfig.json, also made updates to mui inputs
+
 ## 1.3.2
 
 ### Patch Changes
