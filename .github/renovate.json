@@ -1,10 +1,10 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", "schedule:earlyMondays"],
+  "extends": ["config:recommended", "schedule:earlyMondays"],
   "packageRules": [
     {
-      "matchPackagePatterns": ["^@repo/"],
-      "enabled": false
+      "enabled": false,
+      "matchPackageNames": ["/^@repo//"]
     }
   ],
   "updateInternalDeps": true,
