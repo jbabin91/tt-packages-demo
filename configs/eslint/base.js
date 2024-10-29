@@ -110,6 +110,7 @@ export default tseslint.config(
     },
     plugins: {
       'jsx-a11y': jsxA11y,
+      // @ts-ignore
       react,
       'react-hooks': reactHooks,
     },
