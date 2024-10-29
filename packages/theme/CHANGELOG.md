@@ -1,5 +1,13 @@
 # @jbabin91/mui-theme
 
+## 1.4.1
+
+### Patch Changes
+
+- [`e27a5a0`](https://github.com/jbabin91/tt-packages-demo/commit/e27a5a03077fa59caebe7fb78cae9542301dcb58) Thanks [@jbabin91](https://github.com/jbabin91)! - chore(repo): :hammer: bump dependencies
+
+- [`e27a5a0`](https://github.com/jbabin91/tt-packages-demo/commit/e27a5a03077fa59caebe7fb78cae9542301dcb58) Thanks [@jbabin91](https://github.com/jbabin91)! - chore(theme): :hammer: ignore typescript error
+
 ## 1.4.0
 
 ### Minor Changes
