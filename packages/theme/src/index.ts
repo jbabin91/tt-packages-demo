@@ -319,6 +319,7 @@ export {
 
 // MUI X
 export type * from './components/mui-x/charts/index.js';
+// eslint-disable-next-line @typescript-eslint/consistent-type-exports
 export * from './components/mui-x/charts/index.js';
 export type * from './components/mui-x/data-grid/index.js';
 export * from './components/mui-x/data-grid/index.js';
