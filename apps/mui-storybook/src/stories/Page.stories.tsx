@@ -1,8 +1,9 @@
+import type { Meta } from '@storybook/react';
 import { expect, userEvent, within } from '@storybook/test';
 
 import { Page } from './Page';
 
-export default {
+const meta: Meta<typeof Page> = {
   component: Page,
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/configure/story-layout
@@ -10,6 +11,8 @@ export default {
   },
   title: 'Example/Page',
 };
+
+export default meta;
 
 export const LoggedOut = {};
 

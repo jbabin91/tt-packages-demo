@@ -1,8 +1,9 @@
+import { type Meta } from '@storybook/react';
 import { fn } from '@storybook/test';
 
 import { Header } from './Header';
 
-export default {
+const meta: Meta<typeof Header> = {
   args: {
     onCreateAccount: fn(),
     onLogin: fn(),
@@ -17,6 +18,8 @@ export default {
   tags: ['autodocs'],
   title: 'Example/Header',
 };
+
+export default meta;
 
 export const LoggedIn = {
   args: {
