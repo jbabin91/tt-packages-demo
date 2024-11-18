@@ -1,5 +1,12 @@
 # mui-storybook
 
+## 1.0.7
+
+### Patch Changes
+
+- Updated dependencies [[`fa4fc10`](https://github.com/jbabin91/tt-packages-demo/commit/fa4fc10320d352aefd2fe49ddf7bc266b2501ccb)]:
+  - @jbabin91/mui-theme@1.4.3
+
 ## 1.0.6
 
 ### Patch Changes

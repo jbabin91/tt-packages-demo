@@ -1,5 +1,11 @@
 # @jbabin91/mui-theme
 
+## 1.4.3
+
+### Patch Changes
+
+- [`fa4fc10`](https://github.com/jbabin91/tt-packages-demo/commit/fa4fc10320d352aefd2fe49ddf7bc266b2501ccb) Thanks [@jbabin91](https://github.com/jbabin91)! - chore(repo): :hammer: bump dependencies
+
 ## 1.4.2
 
 ### Patch Changes
