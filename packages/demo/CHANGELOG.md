@@ -1,5 +1,11 @@
 # tt-package-demo-2
 
+## 1.4.1
+
+### Patch Changes
+
+- [`6e37767`](https://github.com/jbabin91/tt-packages-demo/commit/6e377679c1fad85fbf8f7450e0898f8250046fa2) Thanks [@jbabin91](https://github.com/jbabin91)! - chore(demo): :hammer: update package.json exports
+
 ## 1.4.0
 
 ### Minor Changes
