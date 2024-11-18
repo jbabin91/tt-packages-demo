@@ -1,5 +1,15 @@
 # @jbabin91/mui-theme
 
+## 1.4.2
+
+### Patch Changes
+
+- [`6e37767`](https://github.com/jbabin91/tt-packages-demo/commit/6e377679c1fad85fbf8f7450e0898f8250046fa2) Thanks [@jbabin91](https://github.com/jbabin91)! - fix(deps): update material-ui monorepo
+
+- [`6e37767`](https://github.com/jbabin91/tt-packages-demo/commit/6e377679c1fad85fbf8f7450e0898f8250046fa2) Thanks [@jbabin91](https://github.com/jbabin91)! - fix(deps): update material-ui monorepo to ^7.22.2 (#14)
+
+  Co-authored-by: renovate[bot] <29139614+renovate[bot]@users.noreply.github.com>
+
 ## 1.4.1
 
 ### Patch Changes
