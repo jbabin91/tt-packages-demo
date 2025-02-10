@@ -35,6 +35,6 @@
     "prop-types": "^15.8.1",
     "storybook": "^8.4.4",
     "storybook-dark-mode": "^4.0.2",
-    "vitest": "^2.1.8"
+    "vitest": "^2.1.9"
   }
 }
