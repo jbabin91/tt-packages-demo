@@ -73,8 +73,8 @@ importers:
         version: 18.3.1(react@18.3.1)
     devDependencies:
       '@chromatic-com/storybook':
-        specifier: ^3.2.6
-        version: 3.2.6(react@18.3.1)(storybook@8.4.4(prettier@3.3.3))
+        specifier: ^3.2.7
+        version: 3.2.7(react@18.3.1)(storybook@8.4.4(prettier@3.3.3))
       '@repo/eslint-config':
         specifier: workspace:*
         version: link:../../configs/eslint
@@ -438,8 +438,8 @@ packages:
   '@changesets/write@0.3.2':
     resolution: {integrity: sha512-kDxDrPNpUgsjDbWBvUo27PzKX4gqeKOlhibaOXDJA6kuBisGqNHv/HwGJrAu8U/dSf8ZEFIeHIPtvSlZI1kULw==}
 
-  '@chromatic-com/storybook@3.2.6':
-    resolution: {integrity: sha512-FDmn5Ry2DzQdik+eq2sp/kJMMT36Ewe7ONXUXM2Izd97c7r6R/QyGli8eyh/F0iyqVvbLveNYFyF0dBOJNwLqw==}
+  '@chromatic-com/storybook@3.2.7':
+    resolution: {integrity: sha512-fCGhk4cd3VA8RNg55MZL5CScdHqljsQcL9g6Ss7YuobHpSo9yytEWNdgMd5QxAHSPBlLGFHjnSmliM3G/BeBqw==}
     engines: {node: '>=16.0.0', yarn: '>=1.22.18'}
     peerDependencies:
       storybook: ^8.2.0 || ^8.3.0-0 || ^8.4.0-0 || ^8.5.0-0 || ^8.6.0-0
@@ -4849,7 +4849,7 @@ snapshots:
       human-id: 1.0.2
       prettier: 2.8.8
 
-  '@chromatic-com/storybook@3.2.6(react@18.3.1)(storybook@8.4.4(prettier@3.3.3))':
+  '@chromatic-com/storybook@3.2.7(react@18.3.1)(storybook@8.4.4(prettier@3.3.3))':
     dependencies:
       chromatic: 11.18.1
       filesize: 10.1.6
