@@ -31,7 +31,7 @@
     }
   },
   "devDependencies": {
-    "@arethetypeswrong/cli": "^0.17.4",
+    "@arethetypeswrong/cli": "^0.18.2",
     "@changesets/changelog-github": "^0.5.1",
     "@changesets/cli": "^2.27.12",
     "@commitlint/config-conventional": "^19.8.1",
