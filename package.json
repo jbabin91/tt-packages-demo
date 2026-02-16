@@ -36,7 +36,7 @@
     "@changesets/cli": "^2.29.8",
     "@commitlint/config-conventional": "^19.8.1",
     "@repo/eslint-config": "workspace:*",
-    "@types/node": "^22.19.10",
+    "@types/node": "^22.19.11",
     "changeset-conventional-commits": "^0.2.5",
     "commitlint": "^19.8.1",
     "cz-git": "^1.12.0",
