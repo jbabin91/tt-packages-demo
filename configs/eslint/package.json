@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@eslint/compat": "^1.4.1",
-    "@eslint/eslintrc": "^3.3.6",
+    "@eslint/eslintrc": "^3.3.7",
     "@eslint/js": "9.39.5",
     "@repo/typescript-config": "workspace:*",
     "@types/eslint": "^9.6.1",
