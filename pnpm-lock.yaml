@@ -33,8 +33,8 @@ importers:
         specifier: ^19.8.1
         version: 19.8.1(@types/node@22.19.21)(typescript@5.9.3)
       cz-git:
-        specifier: ^1.12.0
-        version: 1.12.0
+        specifier: ^1.14.0
+        version: 1.14.0
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -2311,8 +2311,8 @@ packages:
   csstype@3.2.3:
     resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
-  cz-git@1.12.0:
-    resolution: {integrity: sha512-LaZ+8whPPUOo6Y0Zy4nIbf6JOleV3ejp41sT6N4RPKiKKA+ICWf4ueeIlxIO8b6JtdlDxRzHH/EcRji07nDxcg==}
+  cz-git@1.14.0:
+    resolution: {integrity: sha512-QjwlXZrGWsXQkyregBHhA2qNNGB2TCuf0ovkW1Q5OLgdJDs9Tq1yahfKpSMLyqOBjVRuv1iHBTDP83zJDBlJdg==}
     engines: {node: '>=v12.20.0'}
 
   d3-array@3.2.4:
@@ -6765,7 +6765,7 @@ snapshots:
 
   csstype@3.2.3: {}
 
-  cz-git@1.12.0: {}
+  cz-git@1.14.0: {}
 
   d3-array@3.2.4:
     dependencies:
